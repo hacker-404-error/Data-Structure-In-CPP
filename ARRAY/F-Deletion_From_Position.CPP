@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int a[10],i,n,x;
+    int a[10],i,n,pos;
     cout<<"enter the number of elements"<<endl;
     cin>>n;
     cout<<"enter the elements"<<endl;
@@ -12,10 +12,10 @@ int main()
     } 
 
     cout<<"enter the positon of the element you want to DELETE"<<endl;
-    cin>>x;
+    cin>>pos;
 
     
-    for(i=x-1;i<n;i++)
+    for(i=pos-1;i<n;i++)
     {
        a[i]=a[i+1];              
     }    
