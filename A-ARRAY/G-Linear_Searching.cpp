@@ -7,7 +7,7 @@ int main()
     cin>>n;
     if(n>10)
     {
-        cout<<"limit exceeded...........we are sorry"<<endl;
+        cout<<"limit exceeded...."<<endl;
         exit(0);
 
     }
