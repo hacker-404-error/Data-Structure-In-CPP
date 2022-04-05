@@ -97,6 +97,8 @@ Basic Analysis Of Algorithm :
     - `Theta`
     - `Omegs`
 - `Worst Case & Best Case.`
+- `Pointers.`
+- `Structure.`
 
 --------
 
