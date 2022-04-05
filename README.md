@@ -83,3 +83,31 @@ The major or the common operations that can be performed on the data structures 
 - `Efficiency:` If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.
 - `Reusability:` The data structure provides reusability means that multiple client programs can use the data structure.
 - `Abstraction:` The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.
+
+# Prerequisite : 
+Basic Analysis Of Algorithm :
+
+- `What Is Algorithm ?`
+- `Time Complexity.`
+- `Space Complexity.`
+- `Rate Of Growth.`
+- `Complexity Notation.`
+- `Asymptotic Notation.`
+    - `Big Oh`
+    - `Theta`
+    - `Omegs`
+- `Worst Case & Best Case.`
+
+--------
+
+### Created And Coded By:
+
+
+<a href="https://github.com/hacker-404-error"><img src="https://i.ibb.co/yYd2Xjb/In-Shot-20220309-143908060.png" alt="Avatar" style="border-radius: 50%; width:70px"></a>
+
+<a href = "https://github.com/hacker-404-error">Pritam Das</a>
+
+
+
+## 🔗 Feedback 
+If you have any feedback, please reach out to me at [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pritam-das-7489ab223/)
