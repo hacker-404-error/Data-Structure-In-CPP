@@ -1,1 +1,85 @@
-# Data-Structure-In-CPP
+# Data-Structure
+
+Data Structure : `Mathematical And Logical Model Of Organizing the interrelated data`
+
+- A data structure is a way of organizing the data so that it can be used efficiently. Here, we have used the word efficiently, which in terms of both the space and time.
+
+- The data structure is not any programming language like C, C++, java, etc. It is a set of algorithms that we can use in any programming language to structure the data in the memory.
+
+- To structure the data in memory, 'n' number of algorithms were proposed, and all these algorithms are known as Abstract data types. These abstract data types are the set of rules.
+
+# Types of Data Structures
+There are two types of data structures:
+
+`Primitive data structure`
+`Non-primitive data structure`
+
+## Primitive Data structure
+
+The primitive data structures are primitive data types like:
+- `int`
+- `char`
+- `float `
+- `double`
+- `pointer`
+
+that can hold a single value.
+
+## Non-Primitive Data structure
+
+The non-primitive data structure is divided into two types:
+
+`Linear data structure`
+`Non-linear data structure`
+
+### Linear Data Structure
+The arrangement of data in a sequential manner is known as a linear data structure. The data structures used for this purpose are:
+
+- `Arrays`
+- `Linked list`
+- `Stacks`
+- `Queues`
+
+In these data structures, one element is connected to only one another element in a linear form.
+
+### Non-Linear Data Structure
+When one element is connected to the 'n' number of elements known as a non-linear data structure. Like:
+- `Trees `
+- `Graphs`
+- `Heap`
+- `Hash`
+
+In these case, the elements are arranged in a random manner.
+
+### Data structures can also be classified as:
+- `Static data structure:` It is a type of data structure where the size is allocated at the compile time. Therefore, the maximum size is fixed.
+- `Dynamic data structure:` It is a type of data structure where the size is allocated at the run time. Therefore, the maximum size is flexibl
+
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/ds-introduction.png" alt="Types Of Data Structure">
+</div>
+<br>
+
+# Which Data Structure? `IMP*`
+- A data structure is a way of organizing the data so that it can be used efficiently. 
+- Here, we have used the word efficiently, which in terms of both the space and time.
+- For example, a stack is an ADT (Abstract data type) which uses either arrays or linked list data structure for the implementation. 
+- Therefore, we conclude that we require some data structure to implement a particular ADT.
+- `An ADT tells what is to be done and data structure tells how it is to be done.` In other words, we can say that ADT gives us the blueprint while data structure provides the implementation part. 
+
+# Major Operations
+The major or the common operations that can be performed on the data structures are:
+- `Traversing:`Visit all the lements in a data structure from one position to another.
+- `Searching:` We can search for any element in a data structure.
+- `Sorting:` We can sort the elements of a data structure either in an ascending or descending order.
+- `Insertion:` We can also insert the new element in a data structure.
+- `Updation:` We can also update the element, i.e., we can replace the element with another element.
+- `Deletion:` We can also perform the delete operation to remove the element from the data structure.
+- `Merging:` Combine two Data Structure of same type. 
+
+# Advantages of Data structures
+
+- `Efficiency:` If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.
+- `Reusability:` The data structure provides reusability means that multiple client programs can use the data structure.
+- `Abstraction:` The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.
