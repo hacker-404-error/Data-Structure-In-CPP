@@ -278,12 +278,33 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
    - Total Number Of Comparision To Find Min and Max :                    2n-2     
 ```
 2n-2 is The total number of comparision to find minimum and maximum 
+Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
 - To reduce this comparision we can use one Method called : 
-  ### `TOURNAMENT METHOD TO FIND MAX AND MIN (WITH MINIMUM NUMBER OF COMPARISION)`
 
+### `TOURNAMENT METHOD TO FIND MAX AND MIN (WITH MINIMUM NUMBER OF COMPARISION)`
+- Divide the array into two parts and compare the maximums and minimums of the two parts to get the maximum and the minimum of the whole array.
 
+Implementation (Algorithm) : 
+```
+Pair MaxMin(array, array_size)
+   if array_size = 1
+      return element as both max and min
+   else if arry_size = 2
+      one comparison to determine max and min
+      return that pair
+   else    /* array_size  > 2 */
+      recur for max and min of left half
+      recur for max and min of right half
+      one comparison determines true max of the two candidates
+      one comparison determines true min of the two candidates
+      return the pair of max and min
+```
+| TIME COMPLEXITY | SPACE COMPLEXITY |
+| --------------- | ---------------- |
+| Theta(n)        | Theta(1) or O(1) |
 
-
+Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 
 
