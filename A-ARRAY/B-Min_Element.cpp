@@ -1,6 +1,6 @@
 
 // Time Complexity:  Theta(n)
-// Space Complexity: Theta(1)
+// Space Complexity: Theta(1) OR Order(1)
 
 #include<iostream>
 #include<conio.h>
