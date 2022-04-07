@@ -277,8 +277,7 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
      
    - Total Number Of Comparision To Find Min and Max :                    2n-2     
 ```
-2n-2 is The total number of comparision to find minimum and maximum 
-Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+2n-2 is The total number of comparision to find minimum and maximum : Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 - To reduce this comparision we can use one Method called : 
 
