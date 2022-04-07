@@ -183,6 +183,8 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
 - Then we can traverse through the whole array by comparing the assumed minimum element (Very first element in array).
 - If our minimum array element is greater then some element in array while traversing then we can assign that element as minimum element.
 - Like this we traverse till the end of the array and at the end the element present in minimum variable is the minimum element.
+
+   - `No Of Comparision Between The Elements : n-1`     
     
 Implementation : 
 ```
@@ -226,7 +228,9 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
 - Then we can traverse through the whole array by comparing the assumed maximum element (Very first element in array).
 - If our maximum array element is smaller then some element in array while traversing then we can assign that element as maximum element.
 - Like this we traverse till the end of the array and at the end the element present in maximum variable is the maximum element.
-    
+
+   - `No Of Comparision Between The Elements : n-1`    
+
 Implementation : 
 ```
 #include<iostream>
@@ -265,8 +269,17 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
 ------------------------------------------------------------------------------------------------------------
 
 
+## `Finding Minimum And Maximum`
 
-
+```
+   - No Of Comparision Between The Elements To find Minimum:              n-1
+   - No Of Comparision Between The Elements To find Maximum:              n-1
+     
+   - Total Number Of Comparision To Find Min and Max :                    2n-2     
+```
+2n-2 is The total number of comparision to find minimum and maximum 
+- To reduce this comparision we can use one Method called : 
+  ### `TOURNAMENT METHOD TO FIND MAX AND MIN (WITH MINIMUM NUMBER OF COMPARISION)`
 
 
 
