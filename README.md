@@ -297,9 +297,8 @@ Combine two arrays in such a way that one array is appended to another array.
 Update operation refers to updating an existing element from the array at a given index.
 [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/O-Updating_In_Array.cpp)
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 ### Created And Coded By:
-
 <a href="https://github.com/hacker-404-error"><img src="https://i.ibb.co/yYd2Xjb/In-Shot-20220309-143908060.png" alt="Avatar" style="border-radius: 50%; width:70px"></a>
 
 <a href = "https://github.com/hacker-404-error">Pritam Das</a>
