@@ -277,7 +277,7 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
      
    - Total Number Of Comparision To Find Min and Max :                    2n-2     
 ```
-2n-2 is The total number of comparision to find minimum and maximum : Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+2n-2 is The total number of comparision to find minimum and maximum : Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/D-MinAndMax_Element.cpp)
 
 - To reduce this comparision we can use one Method called : 
 
@@ -303,7 +303,7 @@ Pair MaxMin(array, array_size)
 | --------------- | ---------------- |
 | Theta(n)        | Theta(1) or O(1) |
 
-Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/E-Tournament_Method_Min_And_Max.cpp)
 
 ## `Insertion In Array`
 Insert operation is to insert one or more data elements into an array. Based on the requirement, a new element can be added at the beginning, end, or any given index of array.
