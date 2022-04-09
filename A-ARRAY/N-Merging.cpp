@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    system("cls");
     int a[100],n,m,i,x,flag=0;
     int b[10];
     cout<<"enter the number of elements for first array"<<endl;

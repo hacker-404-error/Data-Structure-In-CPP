@@ -30,7 +30,7 @@ int main()
     }
     if(flag==0)
     {
-    cout<<"element not found"<<endl;
+    cout<<" element "<<x<<" not found"<<endl;
     }
     return 0;
 }
