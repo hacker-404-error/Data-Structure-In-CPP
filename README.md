@@ -156,18 +156,12 @@ Traversing in Array means Visit all the elements of the array from Lower Bound A
 Implementation :
 
 ```
-#include <iostream>
-using namespace std;
-int main()
-{
-    int i, size;
-    int arr[]={53, 99, -11, 5, 102};    //declaring and initializing array
-    size=sizeof(arr)/sizeof(arr[0]);
-    cout << "The array elements are: ";
-    for(i=0;i<size;i++)
-        cout << "\n" << "arr[" << i << "]= " << arr[i];
-    return 0;
-}
+Step 01: Start
+Step 02: [Initialize counter variable. ] Set i = LB.
+Step 03: Repeat for i = LB to UB.
+Step 04: Apply process to arr[i].
+Step 05: [End of loop. ]
+Step 06: Stop
 ```
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
@@ -188,32 +182,12 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
     
 Implementation : 
 ```
-#include<iostream>
-#include<conio.h>
-using namespace std;
-int main()
-{
-    int a[100],n,i,min;
-    cout<<"Enter the no of elements you want to enter :"<<endl;
-    cin>>n;
-    cout<<"Enter the elements :"<<endl;
-    for(i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-    min=a[0];
-
-    for(i=0;i<n;i++)
-    {
-        if(min>a[i])
-        {
-            min=a[i];
-        }
-    }
-     cout<<"Minimum Element Is: "<<min;
-    getch();
-    return 0;
-}
+smallest = array[i] // first element
+for i from 1 to length(array):
+    element_i = array[i]
+    if smallest > element_i
+        smallest = element_i
+smallest // this is our answer
 ```
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
@@ -233,32 +207,23 @@ Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?s
 
 Implementation : 
 ```
-#include<iostream>
-#include<conio.h>
-using namespace std;
-int main()
-{
-    int a[100],n,i,max;
-    cout<<"Enter the no of elements you want to enter :"<<endl;
-    cin>>n;
-    cout<<"Enter the elements :"<<endl;
-    for(i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-    max=a[0];
+Step 1: Start
 
-    for(i=0;i<n;i++)
-    {
-        if(max<a[i])
-        {
-            max=a[i];
-        }
-    }
-     cout<<"Maximum Element Is: "<<max;
-    getch();
-    return 0;
-}
+Step 2: Declare array a[n] and variable i, large
+
+Step 3: Read n from User and read all the elements of a[n]
+
+Step 4: Initialize Variable i=1 and large=a[0]
+
+Step 5: Repeat Until i<=n-1
+ 
+           5.1 if(a[i]>large), set large=a[i]
+
+           5.2 increment i=i+1
+           
+Step 6: Print "The largest element is": large
+
+Step 7: Stop
 ```
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
@@ -326,6 +291,10 @@ You can perform a search for an array element based on its value or its index.
 
 ## `Update Operation`
 Update operation refers to updating an existing element from the array at a given index.
+[![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+## `Merge Operation`
+Combine two arrays in such a way that one array is appended to another array.
 [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 
