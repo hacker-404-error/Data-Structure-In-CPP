@@ -66,6 +66,12 @@ int main()
     int arr[10], arr_size, i;
     cout << "Enter the Number of Elements : " << endl;
     cin >> arr_size;
+    if(arr_size>10)
+    {
+        cout<<"limit exceeded...."<<endl;
+        exit(0);
+
+    }
     cout << "Enter the Elements : " << endl;
     for (i = 0; i < arr_size; i++)
     {

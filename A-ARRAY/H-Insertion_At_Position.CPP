@@ -7,6 +7,12 @@ int main()
     int a[10], i, n;
     cout << "enter the number of elements" << endl;
     cin >> n;
+    if(n>10)
+    {
+        cout<<"limit exceeded...."<<endl;
+        exit(0);
+
+    }
     cout << "enter the elements" << endl;
     for (i = 0; i < n; i++)
     {
@@ -43,13 +49,12 @@ int main()
 
     else
     {
-        n++;
-        for (i = n-1; i >= pos; i--)
+        for(i=n-1;i>=pos-1;i--)
         {
-            a[i] = a[i-1];
+            a[i+1] = a[i];
         }
         a[pos-1] = x;
-        
+        n++;
     }
 
     cout << "elements are: " << endl;
@@ -57,6 +62,7 @@ int main()
     {
         cout << a[i] << " ";
     }
+
     getch();
     return 0;
 }

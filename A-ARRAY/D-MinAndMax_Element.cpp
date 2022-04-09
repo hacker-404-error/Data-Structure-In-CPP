@@ -12,6 +12,12 @@ int main()
     unsigned int a[10], n, i;
     cout << "enter the number of elements: " << endl;
     cin >> n;
+    if(n>10)
+    {
+        cout<<"limit exceeded...."<<endl;
+        exit(0);
+
+    }
     cout << "enter the elements: " << endl;
 
     for (i = 0; i < n; i++)

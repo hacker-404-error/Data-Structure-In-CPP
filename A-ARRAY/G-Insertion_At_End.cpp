@@ -7,6 +7,12 @@ int main()
     int n,a[10],i;
     cout<<"Enter the Number of elements you want to enter : "<<endl;
     cin>>n;
+    if(n>10)
+    {
+        cout<<"limit exceeded...."<<endl;
+        exit(0);
+
+    }
     cout<<"Enter the Elements : "<<endl;
     for(i=0;i<n;i++)
     {

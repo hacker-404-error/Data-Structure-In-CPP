@@ -12,6 +12,12 @@ int main()
     int a[100],n,i,min;
     cout<<"Enter the no of elements you want to enter :"<<endl;
     cin>>n;
+    if(n>10)
+    {
+        cout<<"limit exceeded...."<<endl;
+        exit(0);
+
+    }
     cout<<"Enter the elements :"<<endl;
     for(i=0;i<n;i++)
     {
