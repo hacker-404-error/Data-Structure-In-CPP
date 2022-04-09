@@ -305,21 +305,28 @@ Pair MaxMin(array, array_size)
 
 Complete Code : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/E-Tournament_Method_Min_And_Max.cpp)
 
+--------
 ## `Insertion In Array`
 Insert operation is to insert one or more data elements into an array. Based on the requirement, a new element can be added at the beginning, end, or any given index of array.
-- Insertion At Beginning : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
-- Insertion At End : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
-- Insertion At Position : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### Insertion At Beginning : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### Insertion At End :[![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### Insertion At Position : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 
 ## `Deletion From Array`
 Deletion refers to removing an existing element from the array and re-organizing all elements of an array.
+- #### Deletion From Beginning : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### Deletion From End :[![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### Deletion From Position : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 ## `Search Operation`
 You can perform a search for an array element based on its value or its index.
+- #### Linear Search : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]() 
+- #### Binary Search : [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 ## `Update Operation`
 Update operation refers to updating an existing element from the array at a given index.
+[![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 
 
