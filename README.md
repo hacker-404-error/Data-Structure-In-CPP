@@ -297,6 +297,59 @@ Combine two arrays in such a way that one array is appended to another array.
 Update operation refers to updating an existing element from the array at a given index.
 [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/O-Updating_In_Array.cpp)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+# Linked Lists
+- Linked list is a linear data structure that includes a series of connected nodes.
+- Linked list can be defined as the nodes that are randomly stored in the memory. 
+- A node in the linked list contains two parts, i.e., first is the data part and second is the address part. 
+- The last node of the list contains a pointer to the null. 
+- After array, linked list is the second most used data structure. 
+- In a linked list, every link contains a connection to another link.
+
+## Representation Of Linked List
+
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/ds-linked-list.png" alt="Representation Of LL">
+</div>
+<br>
+
+## Why use linked list over array?
+
+`limitations of arrays -`
+
+- The size of the array must be known in advance before using it in the program.
+- Increasing the size of the array is a time taking process. It is almost impossible to expand the size of the array at run time.
+- Inserting and deleting an element in the array needs shifting of all its predecessors.
+
+`Linked list is useful because -`
+
+- It allocates the memory dynamically. 
+- All the nodes of the linked list are non-contiguously stored in the memory and linked together with the help of pointers.
+- In linked list, size is no longer a problem since we do not need to define its size at the time of declaration. 
+- List grows as per the program's demand and limited to the available memory space.
+
+## imitations of using the Linked list -
+
+- `Memory usage -` Each node of the linked list occupies two types of variables, i.e., one is a simple variable, and another one is the pointer variable.
+- `Traversal` -If we have to access an element in the linked list, we cannot access it randomly, while in case of array we can randomly access it by index.
+- `Reverse traversing` - Backtracking or reverse traversing is difficult in a linked list. In a doubly-linked list, it is easier but requires more memory to store the back pointer.
+
+## `Operation On Linked List : `
+
+- `Insertion` - This operation is performed to add an element into the list.
+- `Deletion` - It is performed to delete an operation from the list.
+- `Traversing` - It is performed to display the elements of the list.
+- `Search` - It is performed to search an element from the list using the given key.
+
+## Insertion In Linked List :
+
+- `Insertion At Beginning :`
+- `Insertion At End :`
+- `Insertion At Given position :`
+- `Insertion After Given Node :`
+- `Insertion Before Given Node :`
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ### Created And Coded By:
 <a href="https://github.com/hacker-404-error"><img src="https://i.ibb.co/yYd2Xjb/In-Shot-20220309-143908060.png" alt="Avatar" style="border-radius: 50%; width:70px"></a>

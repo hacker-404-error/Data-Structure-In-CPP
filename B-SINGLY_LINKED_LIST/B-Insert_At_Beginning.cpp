@@ -44,13 +44,20 @@ void linked :: display()
 {
     node*x;
     x=head;
-    cout<<"linked list : ";
-    while(x!=tail)
+    if(x == NULL)
     {
-        cout<<x->data<<"-->";
-        x=x->next;
+        cout<<"There is No element in the list !!! "<<endl;
     }
-    cout<<x->data;
+    else
+    {
+        cout<<"linked list : ";
+        while(x!=tail)
+        {
+            cout<<x->data<<"-->";
+            x=x->next;
+        }
+        cout<<x->data;
+    }
 }
 
 void linked :: insert_at_beg()
@@ -65,6 +72,7 @@ void linked :: insert_at_beg()
 
 int main()
 {
+    system("cls");
     linked a;
     int n;
     cout<<"enter the number of elements you want to enter : "<<endl;
@@ -87,7 +95,7 @@ int main()
         cin>>z;
     }
     cout<<endl;
-    cout<<"final list is : ";
+    cout<<"final ";
     a.display();
     
     return 0;

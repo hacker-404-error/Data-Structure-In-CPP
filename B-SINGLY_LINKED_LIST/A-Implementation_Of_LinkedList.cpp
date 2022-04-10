@@ -99,6 +99,7 @@ class linked_list
 void linked_list :: insert_elements()
 {
     node*temp=new node;
+    cout<<"enter the data : ";
     cin>>temp->data;
     temp->next=NULL;
     if(head==NULL)
@@ -117,13 +118,20 @@ void linked_list :: display()
 {
     node*x;
     x=head;
-    cout<<"your linked list is : "<<endl;
-    while(x!=tail)
+    if(x == NULL)
     {
-        cout<<x->data<<"->";
-        x=x->next;
+        cout<<"There is No element in the list !!! "<<endl;
     }
-    cout<<x->data;
+    else
+    {
+        cout<<"your linked list is : "<<endl;
+        while(x!=tail)
+        {
+            cout<<x->data<<"->";
+            x=x->next;
+        }
+        cout<<x->data;
+    }
 }
 
 int main()
@@ -133,7 +141,7 @@ int main()
     int n;
     cout<<"enter the number of elements you want to enter"<<endl;
     cin>>n;
-    cout<<"enter the data : ";
+    
     while(n!=0)
     {
       a.insert_elements();
@@ -141,7 +149,6 @@ int main()
     }
     cout<<endl;
     a.display();
-    getch();
     return 0;
 }
 
