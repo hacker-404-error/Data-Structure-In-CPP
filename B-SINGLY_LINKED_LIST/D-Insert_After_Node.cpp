@@ -74,8 +74,8 @@ void linked ::insert_after_node()
     }
     else
     {
-    temp->next=a->next;
-    a->next=temp;
+        temp->next=a->next;
+        a->next=temp;
     }
     }
 

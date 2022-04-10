@@ -1,32 +1,34 @@
 #include<iostream>
+#include<conio.h>
 using namespace std;
-
-struct node
+class node
 {
-    int data;
-    node*next=NULL;
-
+    public:
+        int data;
+        node* link=NULL;
 };
-
-class linked
+class linked_list
 {
     private:
-     node*head=NULL;
-     node*tail=NULL;
-    
-    public:
-     void insert();
-     void insert_at_beg();
-     void display();
+        node*head;
+        node*tail;
 
+    public:
+        linked_list()
+        {
+            head=NULL;
+            tail=NULL;
+        }
+        void Insert();
+        void Insert_At_Beg();
+        void Display();
 };
 
-void linked :: insert()
+void linked_list ::Insert()
 {
     node*temp=new node;
-    cout<<"enter the element : ";
     cin>>temp->data;
-    temp->next=NULL;
+    temp->link=NULL;
     if(head==NULL)
     {
         head=temp;
@@ -34,13 +36,12 @@ void linked :: insert()
     }
     else
     {
-        tail->next=temp;
-        tail=tail->next;
-
+        tail->link=temp;
+        tail=tail->link;
     }
 }
 
-void linked :: display()
+void linked_list :: Display()
 {
     node*x;
     x=head;
@@ -54,50 +55,82 @@ void linked :: display()
         while(x!=tail)
         {
             cout<<x->data<<"-->";
-            x=x->next;
+            x=x->link;
         }
         cout<<x->data;
     }
 }
 
-void linked :: insert_at_beg()
+void linked_list :: Insert_At_Beg()
 {
-    
     node*temp=new node;
-    cout<<"enter data : "<<endl;
+    cout<<"Enter the Element to Insert At Beginning : ";
     cin>>temp->data;
-    temp->next=head;
-    head=temp;
+    temp->link=NULL;
+    if(head == NULL)
+    {
+        head = temp;
+        tail = temp;
+    }
+    else
+    {
+        temp->link = head;
+        head = temp;
+    }
+    
 }
 
 int main()
 {
     system("cls");
-    linked a;
+    linked_list l;
     int n;
-    cout<<"enter the number of elements you want to enter : "<<endl;
+    cout<<"Enter the number of elements you want to enter :"<<endl;
     cin>>n;
-    while(n!=0)
+    if(n == 0)
     {
-        a.insert();
-        n--;
-    }
-    a.display();
-    int z;
-    cout<<endl<<endl<<"do you want to insert at beg : "<<endl;
-    cin>>z;
-    while(z==1)
-    {
-        a.insert_at_beg();
-         a.display();
-         cout<<endl<<endl;
-        cout<<"do you want to insert again : "<<endl;
+        cout<<"No element inserted"<<endl;
+        l.Display();
+        int z;
+        cout<<endl<<endl<<"do you want to insert at Beginning : "<<endl;
         cin>>z;
+        while(z==1)
+        {
+            l.Insert_At_Beg();
+             l.Display();
+             cout<<endl<<endl;
+            cout<<"do you want to insert again : "<<endl;
+            cin>>z;
+        }
+        cout<<endl;
+        cout<<"final ";
+        l.Display();
+        
     }
-    cout<<endl;
-    cout<<"final ";
-    a.display();
-    
+    else
+    {
+        cout<<"Enter the elements :"<<endl;
+        while(n!=0)
+        {
+            l.Insert();
+            n--;
+        }
+        l.Display();
+        int z;
+        cout<<endl<<endl<<"do you want to insert at Beginning : "<<endl;
+        cin>>z;
+        while(z==1)
+        {
+            l.Insert_At_Beg();
+             l.Display();
+             cout<<endl<<endl;
+            cout<<"do you want to insert again : "<<endl;
+            cin>>z;
+        }
+        cout<<endl;
+        cout<<"final ";
+        l.Display();
+    }
     return 0;
 }
 

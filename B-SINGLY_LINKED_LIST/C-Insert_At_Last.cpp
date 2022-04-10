@@ -133,26 +133,43 @@ void linked_list ::Insert()
     }
 }
 
-void linked_list ::Display()
+void linked_list :: Display()
 {
-    node*temp;
-    temp=head;
-    cout<<"your linked list is : "<<endl;
-    while(temp!=NULL)
+    node*x;
+    x=head;
+    if(x == NULL)
     {
-        cout<<temp->data<<"->";
-        temp=temp->link;
+        cout<<"There is No element in the list !!! "<<endl;
+    }
+    else
+    {
+        cout<<"linked list : ";
+        while(x!=tail)
+        {
+            cout<<x->data<<"-->";
+            x=x->link;
+        }
+        cout<<x->data;
     }
 }
 
-void linked_list ::Insert_At_Last()
+void linked_list :: Insert_At_Last()
 {
     node*temp=new node;
     cout<<"Enter the Element to Insert At Last : ";
     cin>>temp->data;
     temp->link=NULL;
-    tail->link=temp;
-    tail=tail->link;
+    if(head == NULL)
+    {
+        head = temp;
+        tail = temp;
+    }
+    else
+    {
+        tail->link=temp;
+        tail=tail->link;
+    }
+    
 }
 
 int main()
@@ -162,27 +179,49 @@ int main()
     int n;
     cout<<"Enter the number of elements you want to enter :"<<endl;
     cin>>n;
-    cout<<"Enter the elements :"<<endl;
-    while(n!=0)
+    if(n == 0)
     {
-        l.Insert();
-        n--;
-    }
-    l.Display();
-    int z;
-    cout<<endl<<endl<<"do you want to insert at last : "<<endl;
-    cin>>z;
-    while(z==1)
-    {
-        l.Insert_At_Last();
-         l.Display();
-         cout<<endl<<endl;
-        cout<<"do you want to insert again : "<<endl;
+        cout<<"No element inserted"<<endl;
+        l.Display();
+        int z;
+        cout<<endl<<endl<<"do you want to insert at last : "<<endl;
         cin>>z;
+        while(z==1)
+        {
+            l.Insert_At_Last();
+             l.Display();
+             cout<<endl<<endl;
+            cout<<"do you want to insert again : "<<endl;
+            cin>>z;
+        }
+        cout<<endl;
+        cout<<"final ";
+        l.Display();
+        
     }
-    cout<<endl;
-    cout<<"final list is : ";
-    l.Display();
-    getch();
+    else
+    {
+        cout<<"Enter the elements :"<<endl;
+        while(n!=0)
+        {
+            l.Insert();
+            n--;
+        }
+        l.Display();
+        int z;
+        cout<<endl<<endl<<"do you want to insert at last : "<<endl;
+        cin>>z;
+        while(z==1)
+        {
+            l.Insert_At_Last();
+             l.Display();
+             cout<<endl<<endl;
+            cout<<"do you want to insert again : "<<endl;
+            cin>>z;
+        }
+        cout<<endl;
+        cout<<"final ";
+        l.Display();
+    }
     return 0;
 }
