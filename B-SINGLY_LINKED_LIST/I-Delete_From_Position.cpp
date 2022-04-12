@@ -42,6 +42,10 @@ void linked_list ::display()
     {
         cout << "there is no element in the list" << endl;
     }
+    else if(head->next == NULL)
+    {
+        cout<<head->data<<endl;
+    }
     else
     {
         node *x;
@@ -65,16 +69,26 @@ void linked_list ::delete_from_pos()
     {
         node *y;
         int element;
-        cout << "enter the data you waant to delete : " << endl;
+        cout << "enter the data you want to delete : " << endl;
         cin >> element;
         y = head;
         if (element == head->data)
         {
-            node *temp;
-            temp = head;
-            cout << temp->data << " is deleted from the list....!!" << endl;
+            cout << y->data << " is deleted from the list....!!" << endl;
             head = head->next;
-            free(temp);
+            free(y);
+        }
+        else if(head->next == NULL)
+        {
+            if(head->data == element)
+            {
+                head = NULL;
+                free(y);
+            }
+            else
+            {
+                cout<<"Element Not Found...!!!"<<endl;
+            }
         }
         else
         {
@@ -88,11 +102,10 @@ void linked_list ::delete_from_pos()
             }
             if (y == NULL)
             {
-                cout << "element not found " << endl;
+                cout << "element not found " <<endl;
             }
             else
             {
-                node *g;
                 if (y->next == NULL)
                 {
                     node *temp = head;
@@ -101,14 +114,20 @@ void linked_list ::delete_from_pos()
                         temp = temp->next;
                     }
                     temp->next = NULL;
+                    tail = temp;
+                    cout << y->data << " is deleted from the list ...!!" << endl;
                     free(y);
                 }
                 else
                 {
-                    g = y->next;
-                    y->next = y->next->next;
-                    cout << g->data << " is deleted from the list ...!!" << endl;
-                    free(g);
+                    node *temp = head;
+                    while (temp->next != y)
+                    {
+                        temp = temp->next;
+                    }
+                    temp->next = y->next;
+                    cout << y->data << " is deleted from the list ...!!" << endl;
+                    free(y);
                 }
             }
         }
@@ -135,12 +154,12 @@ int main()
     cout << endl;
     cout << "do you want to delete : " << endl;
     cin >> h;
-    while (h != 0)
+    while (h == 1)
     {
         a.delete_from_pos();
         cout << "your linked list after deletion is : " << endl;
         a.display();
-        cout << "do you want to delete more (press 1) : " << endl;
+        cout << "do you want to delete more (press 1) or else press 0 : " << endl;
         cin >> h;
     }
     return 0;

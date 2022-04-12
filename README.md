@@ -329,7 +329,7 @@ Update operation refers to updating an existing element from the array at a give
 - In linked list, size is no longer a problem since we do not need to define its size at the time of declaration. 
 - List grows as per the program's demand and limited to the available memory space.
 
-## imitations of using the Linked list -
+## Limitations of using the Linked list -
 
 - `Memory usage -` Each node of the linked list occupies two types of variables, i.e., one is a simple variable, and another one is the pointer variable.
 - `Traversal` -If we have to access an element in the linked list, we cannot access it randomly, while in case of array we can randomly access it by index.
@@ -349,6 +349,14 @@ Update operation refers to updating an existing element from the array at a give
 - `Insertion At Given position :`  [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 - `Insertion After Given Node :`   [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 - `Insertion Before Given Node :`    [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+## Deletion In Linked List :
+
+- `Deletion At Beginning :` [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- `Deletion At End :` [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]() 
+- `Deletion At Given position :`  [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- `Deletion After Given Node :`   [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- `Deletion Before Given Node :`    [![Open In Collab](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ### Created And Coded By:
