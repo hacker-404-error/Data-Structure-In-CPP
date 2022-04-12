@@ -6,11 +6,10 @@ int main()
     int a[10], i, n, pos;
     cout << "enter the number of elements" << endl;
     cin >> n;
-    if(n>10)
+    if (n > 10)
     {
-        cout<<"limit exceeded...."<<endl;
+        cout << "limit exceeded...." << endl;
         exit(0);
-
     }
     cout << "enter the elements" << endl;
     for (i = 0; i < n; i++)
@@ -35,23 +34,23 @@ int main()
             a[i] = a[i + 1];
         }
         n--;
-        cout<<"Element Deleted : "<<val<<endl; 
+        cout << "Element Deleted : " << val << endl;
     }
-    else if(pos == n)
+    else if (pos == n)
     {
         n = n - 1;
-        cout<<"Element Deleted : "<<a[n]<<endl; 
+        cout << "Element Deleted : " << a[n] << endl;
     }
     else
     {
         int value;
-        value = a[pos-1];
+        value = a[pos - 1];
         for (i = pos - 1; i < n; i++)
         {
             a[i] = a[i + 1];
         }
         n--;
-        cout<<"Element Deleted : "<<value<<endl; 
+        cout << "Element Deleted : " << value << endl;
     }
 
     cout << "elements are: " << endl;
