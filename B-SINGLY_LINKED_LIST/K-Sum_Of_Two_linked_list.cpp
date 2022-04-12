@@ -15,7 +15,7 @@ public:
     node *tail = NULL;
     void insert();
     void display();
-    int sum(int, int, linked);
+    void sum(int, int, linked);
 };
 
 void linked ::insert()
@@ -49,7 +49,7 @@ void linked ::display()
     cout << x->data;
 }
 
-int linked ::sum(int n, int m, linked b)
+void linked ::sum(int n, int m, linked b)
 {
     node *x;
     x = head;
@@ -65,7 +65,6 @@ int linked ::sum(int n, int m, linked b)
             y = y->next;
         }
         cout << (x->data) + (y->data);
-        return 0;
     }
     /*
     else if (n>m)
@@ -105,9 +104,10 @@ int linked ::sum(int n, int m, linked b)
 
 int main()
 {
+    system("cls");
     linked a, b;
     int n, m, x, y;
-    cout << "enter the number of elements you want to enter for linked list 1: " << endl;
+    cout << "enter the number of elements you want to enter for Both linked list : " << endl;
     cin >> n;
     x = n;
     while (n != 0)
@@ -117,9 +117,9 @@ int main()
     }
     // a.display();
     cout << endl;
-    cout << "enter the number of elements you want to enter for linked list 2: " << endl;
-    cin >> m;
+    m = x;
     y = m;
+    cout << "Enter the elements for Linked List 2: " << endl;
     while (m != 0)
     {
         b.insert();
@@ -130,6 +130,5 @@ int main()
     cout << endl;
     cout << "sum of two singly list is :" << endl;
     a.sum(x, y, b);
-
     return 0;
 }

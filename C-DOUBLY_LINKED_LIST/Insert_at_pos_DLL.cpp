@@ -13,7 +13,7 @@ class dll
      struct node* head=NULL;
      struct node* tail=NULL;
     public:
-    void insert_at_beg();
+    void insert_at_pos();
     void display();
     void insert();
 };
@@ -21,7 +21,7 @@ class dll
 void dll::insert()
 {
     node*temp=new node;
-    cout<<"enter the data : "<<endl;
+    cout<<"enter the data : ";
     cin>>temp->data;
     temp->next=NULL;
     temp->pre=NULL;
@@ -40,23 +40,54 @@ void dll::insert()
     }
 }
 
-void dll::insert_at_beg()
+void dll::insert_at_pos()
 {
-    node*temp=new node;
-    cout<<"enter data : "<<endl;
-    cin>>temp->data;
-    temp->next=NULL;
-    temp->pre=NULL;
+    int count=0,x;
+    cout<<"enter position of data : ";
+    cin>>x;
+    node*temp=head;
+    while(temp!=NULL)
+    {
+       
+        count++;
+        if(count==x)
+        {
+            break;
+        }
+        else
+        {
+             temp=temp->next;
+        }
+    } 
+    node*tmp=new node;
+    cout<<"enter data : ";
+    cin>>tmp->data;
+    tmp->next=NULL;
+    tmp->pre=NULL;
     if(head==NULL)
     {
-        head=temp;
-        tail=temp;
+        head=tmp;
+        tail=tmp;
+    }
+    else if(temp==head)
+    {
+        tmp->next=head;
+        temp->pre=tmp;
+        head=tmp;
+
+    }
+    else if(temp==NULL)
+    {
+        tail->next=tmp;
+        tmp->pre=tail;
+        tail=tmp;
     }
     else
     {
-        temp->next=head;
-        head->pre=temp;
-        head=temp;
+        tmp->pre=temp->pre->next;
+        tmp->next=temp;
+        temp->pre->next=tmp;
+        temp->pre=tmp;
     }
 }
 
@@ -64,18 +95,20 @@ void dll :: display()
 {
     node*x;
     x=head;
-    while(x!=NULL)
+    while(x!=tail)
     {
         cout<<x->data<<"->";
         x=x->next;
     }
+   cout<<x->data;
 
 }
 int main()
 {
+    system("cls");
      dll a;
     int n;
-    cout<<"enter the number of entries : "<<endl;
+    cout<<"Enter the number of entries : "<<endl;
     cin>>n;
     while(n!=0)
     {
@@ -85,11 +118,11 @@ int main()
     cout<<"elements are : "<<endl;
     a.display();
     int x;
-    cout<<endl<<"do you want to insert at beg : "<<endl;
+    cout<<endl<<"Do you want to insert at pos : "<<endl;
     cin>>x;
     while(x==1)
     {
-        a.insert_at_beg();
+        a.insert_at_pos();
         a.display();
         cout<<endl;
         cout<<"do you want to enter again "<<endl;

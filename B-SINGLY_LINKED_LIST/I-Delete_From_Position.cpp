@@ -42,9 +42,9 @@ void linked_list ::display()
     {
         cout << "there is no element in the list" << endl;
     }
-    else if(head->next == NULL)
+    else if (head->next == NULL)
     {
-        cout<<head->data<<endl;
+        cout << head->data << endl;
     }
     else
     {
@@ -78,16 +78,16 @@ void linked_list ::delete_from_pos()
             head = head->next;
             free(y);
         }
-        else if(head->next == NULL)
+        else if (head->next == NULL)
         {
-            if(head->data == element)
+            if (head->data == element)
             {
                 head = NULL;
                 free(y);
             }
             else
             {
-                cout<<"Element Not Found...!!!"<<endl;
+                cout << "Element Not Found...!!!" << endl;
             }
         }
         else
@@ -102,7 +102,7 @@ void linked_list ::delete_from_pos()
             }
             if (y == NULL)
             {
-                cout << "element not found " <<endl;
+                cout << "element not found " << endl;
             }
             else
             {
