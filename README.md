@@ -298,7 +298,7 @@ Update operation refers to updating an existing element from the array at a give
 [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/O-Updating_In_Array.cpp)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
-# Linked Lists
+# LINKED LIST 
 - Linked list is a linear data structure that includes a series of connected nodes.
 - Linked list can be defined as the nodes that are randomly stored in the memory. 
 - A node in the linked list contains two parts, i.e., first is the data part and second is the address part. 
