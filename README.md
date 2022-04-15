@@ -359,6 +359,13 @@ Update operation refers to updating an existing element from the array at a give
 ## Merging Of Linked List :
 - `Merging :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
+## Types Of Linked List :
+- ### `Singly Linked List( Default : Linked List)`
+- ### `Doubly Linked List`
+- ### `Circular Linked List`
+- ### `Doubly Circular Linked List`
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 ### Created And Coded By:
