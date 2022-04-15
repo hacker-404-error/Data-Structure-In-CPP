@@ -413,16 +413,62 @@ Update operation refers to updating an existing element from the array at a give
 | Deletion From End       | O(n)            | O(1)             |
 | Deletion From Position  | O(n)            | O(1)             |
 
+## Searching In Linked List :
+- #### `Searching :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
 ## Merging Of Linked List :
 
 - #### `Merging :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 ## Types Of Linked List :
 
-- ### `Singly Linked List( Default : Linked List)`
-- ### `Doubly Linked List`
-- ### `Circular Linked List`
-- ### `Doubly Circular Linked List`
+- #### `Singly Linked List( Default : Linked List)`
+- #### `Doubly Linked List`
+- #### `Circular Linked List`
+- #### `Doubly Circular Linked List`
+  
+---------------------------------------------
+
+# Doubly Linked List
+- Doubly linked list is a complex type of linked list in which a node contains a pointer to the previous as well as the next node in the sequence. 
+- Therefore, in a doubly linked list, a node consists of three parts: node data, pointer to the next node in sequence (next pointer) , pointer to the previous node (previous pointer).
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/doubly-linked-list2.png" alt="Representation Of DLL">
+</div>
+<br>
+
+## Insertion In Doubly Linked List :
+
+- #### `Insertion At Beginning :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion At End :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion At Given position :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion After Given Node :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion Before Given Node :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+|                        | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ---------------------- | --------------- | ---------------- |
+| Insertion At Beginning | O(1)            | O(1)             |
+| Insertion At End       | O(n)            | O(1)             |
+| Insertion At Position  | O(n)            | O(1)             |
+| Insertion After Node   | O(n)            | O(1)             |
+| Insertion Before Node  | O(n)            | O(1)             |
+
+## Deletion From Doubly Linked List :
+
+- #### `Deletion At Beginning :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Deletion At End :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Deletion At Given position :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+|                         | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ----------------------- | --------------- | ---------------- |
+| Deletion From Beginning | O(1)            | O(1)             |
+| Deletion From End       | O(n)            | O(1)             |
+| Deletion From Position  | O(n)            | O(1)             |
+
+## Merging Of Doubly Linked List :
+
+- #### `Merging :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 ---
 
