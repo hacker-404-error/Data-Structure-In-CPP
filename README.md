@@ -110,7 +110,7 @@ Basic Analysis Of Algorithm :
 - `Pointers.`
 - `Structure.`
 
------
+---
 
 # ARRAYS
 
@@ -147,7 +147,7 @@ Byte address of element A[i]  = base address + size * (i - first index)
 </div>
 <br>
 
------------------------------------------------------------------------------------------------------
+---
 
 ## `Traversing in Array`
 
@@ -163,13 +163,14 @@ Step 04: Apply process to arr[i].
 Step 05: [End of loop. ]
 Step 06: Stop
 ```
+
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
 | O(n)            | O(1)             |
 
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/A-Traversing.cpp)
 
-----------------------------------------------------------------------------------------------------
+---
 
 ## `Finding Minimum Element In Array`
 
@@ -178,9 +179,10 @@ Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?styl
 - If our minimum array element is greater then some element in array while traversing then we can assign that element as minimum element.
 - Like this we traverse till the end of the array and at the end the element present in minimum variable is the minimum element.
 
-   - `No Of Comparision Between The Elements : n-1`     
-    
-Implementation : 
+  - `No Of Comparision Between The Elements : n-1`
+
+Implementation :
+
 ```
 smallest = array[i] // first element
 for i from 1 to length(array):
@@ -189,23 +191,26 @@ for i from 1 to length(array):
         smallest = element_i
 smallest // this is our answer
 ```
+
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
 | Theta(n)        | Theta(1) or O(1) |
 
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/B-Min_Element.cpp)
 
-----------------------------------------------------------------------------------------------------
+---
 
 ## `Finding Maximum Element In Array`
+
 - To Find the Maximum Element in Array, we first assign the very first element as maximum
 - Then we can traverse through the whole array by comparing the assumed maximum element (Very first element in array).
 - If our maximum array element is smaller then some element in array while traversing then we can assign that element as maximum element.
 - Like this we traverse till the end of the array and at the end the element present in maximum variable is the maximum element.
 
-   - `No Of Comparision Between The Elements : n-1`    
+  - `No Of Comparision Between The Elements : n-1`
 
-Implementation : 
+Implementation :
+
 ```
 Step 1: Start
 
@@ -216,40 +221,43 @@ Step 3: Read n from User and read all the elements of a[n]
 Step 4: Initialize Variable i=1 and large=a[0]
 
 Step 5: Repeat Until i<=n-1
- 
+
            5.1 if(a[i]>large), set large=a[i]
 
            5.2 increment i=i+1
-           
+
 Step 6: Print "The largest element is": large
 
 Step 7: Stop
 ```
+
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
 | Theta(n)        | Theta(1) or O(1) |
 
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/C-Max_Element.cpp)
 
-------------------------------------------------------------------------------------------------------------
-
+---
 
 ## `Finding Minimum And Maximum`
 
 ```
    - No Of Comparision Between The Elements To find Minimum:              n-1
    - No Of Comparision Between The Elements To find Maximum:              n-1
-     
-   - Total Number Of Comparision To Find Min and Max :                    2n-2     
+
+   - Total Number Of Comparision To Find Min and Max :                    2n-2
 ```
+
 2n-2 is The total number of comparision to find minimum and maximum : Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/D-MinAndMax_Element.cpp)
 
-- To reduce this comparision we can use one Method called : 
+- To reduce this comparision we can use one Method called :
 
 ### `TOURNAMENT METHOD TO FIND MAX AND MIN (WITH MINIMUM NUMBER OF COMPARISION)`
+
 - Divide the array into two parts and compare the maximums and minimums of the two parts to get the maximum and the minimum of the whole array.
 
-Implementation (Algorithm) : 
+Implementation (Algorithm) :
+
 ```
 Pair MaxMin(array, array_size)
    if array_size = 1
@@ -264,46 +272,81 @@ Pair MaxMin(array, array_size)
       one comparison determines true min of the two candidates
       return the pair of max and min
 ```
+
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
 | Theta(n)        | Theta(1) or O(1) |
 
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/E-Tournament_Method_Min_And_Max.cpp)
 
---------
+---
+
 ## `Insertion In Array`
+
 Insert operation is to insert one or more data elements into an array. Based on the requirement, a new element can be added at the beginning, end, or any given index of array.
+
 - #### Insertion At Beginning : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/F-Insertion_At_Beg.cpp)
 - #### Insertion At End :[![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/G-Insertion_At_End.cpp)
 - #### Insertion At Position : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/H-Insertion_At_Position.CPP)
 
+|                        | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ---------------------- | --------------- | ---------------- |
+| Insertion At Beginning | O(1)            | O(1)             |
+| Insertion At End       | O(1)            | O(1)             |
+| Insertion At Position  | O(n)            | O(1)             |
 
 ## `Deletion From Array`
+
 Deletion refers to removing an existing element from the array and re-organizing all elements of an array.
+
 - #### Deletion From Beginning : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/I-Deletion_From_Beg.cpp)
 - #### Deletion From End :[![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/J-Deletion_From_End.cpp)
 - #### Deletion From Position : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/K-Deletion_From_Position.CPP)
 
-## `Search Operation`
+|                         | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ----------------------- | --------------- | ---------------- |
+| Deletion From Beginning | O(1)            | O(1)             |
+| Deletion From End       | O(1)            | O(1)             |
+| Deletion From Position  | O(n)            | O(1)             |
+
+## `Searching In Array`
+
 You can perform a search for an array element based on its value or its index.
-- #### Linear Search : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/L-Linear_Searching.cpp) 
+
+- #### Linear Search : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/L-Linear_Searching.cpp)
 - #### Binary Search : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/M-Binary_Search.cpp)
 
-## `Merge Operation`
+|               | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ------------- | --------------- | ---------------- |
+| Linear Search | O(n)            | O(1)             |
+| Binary Search | O(log n)        | O(1)             |
+
+## `Merging Of Array`
+
 Combine two arrays in such a way that one array is appended to another array.
 [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/N-Merging.cpp)
 
-## `Update Operation`
+|                   | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ----------------- | --------------- | ---------------- |
+| Merging operation | O(m + n)        | O(m + n)         |
+
+## `Updating in Array`
+
 Update operation refers to updating an existing element from the array at a given index.
 [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/O-Updating_In_Array.cpp)
+| | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ---------------- | --------------- | ---------------- |
+| Update operation | O(n) | O(1) |
 
---------------------------------------------------------------------------------------------------------------------------------------------------
-# LINKED LIST 
+---
+
+# LINKED LIST
+
 - Linked list is a linear data structure that includes a series of connected nodes.
-- Linked list can be defined as the nodes that are randomly stored in the memory. 
-- A node in the linked list contains two parts, i.e., first is the data part and second is the address part. 
-- The last node of the list contains a pointer to the null. 
-- After array, linked list is the second most used data structure. 
+- Linked list can be defined as the nodes that are randomly stored in the memory.
+- A node in the linked list contains two parts, i.e., first is the data part and second is the address part.
+- The last node of the list contains a pointer to the null.
+- After array, linked list is the second most used data structure.
 - In a linked list, every link contains a connection to another link.
 
 ## Representation Of Linked List
@@ -324,9 +367,9 @@ Update operation refers to updating an existing element from the array at a give
 
 `Linked list is useful because -`
 
-- It allocates the memory dynamically. 
+- It allocates the memory dynamically.
 - All the nodes of the linked list are non-contiguously stored in the memory and linked together with the help of pointers.
-- In linked list, size is no longer a problem since we do not need to define its size at the time of declaration. 
+- In linked list, size is no longer a problem since we do not need to define its size at the time of declaration.
 - List grows as per the program's demand and limited to the available memory space.
 
 ## Limitations of using the Linked list -
@@ -345,30 +388,46 @@ Update operation refers to updating an existing element from the array at a give
 ## Insertion In Linked List :
 
 - #### `Insertion At Beginning :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
-- #### `Insertion At End :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]() 
-- #### `Insertion At Given position :`  [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
-- #### `Insertion After Given Node :`   [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
-- #### `Insertion Before Given Node :`    [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion At End :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion At Given position :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion After Given Node :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Insertion Before Given Node :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+|                        | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ---------------------- | --------------- | ---------------- |
+| Insertion At Beginning | O(1)            | O(1)             |
+| Insertion At End       | O(n)            | O(1)             |
+| Insertion At Position  | O(n)            | O(1)             |
+| Insertion After Node   | O(n)            | O(1)             |
+| Insertion Before Node  | O(n)            | O(1)             |
 
 ## Deletion From Linked List :
 
 - #### `Deletion At Beginning :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
-- #### `Deletion At End :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]() 
-- #### `Deletion At Given position :`  [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Deletion At End :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+- #### `Deletion At Given position :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+|                         | TIME COMPLEXITY | SPACE COMPLEXITY |
+| ----------------------- | --------------- | ---------------- |
+| Deletion From Beginning | O(1)            | O(1)             |
+| Deletion From End       | O(n)            | O(1)             |
+| Deletion From Position  | O(n)            | O(1)             |
 
 ## Merging Of Linked List :
+
 - #### `Merging :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 ## Types Of Linked List :
+
 - ### `Singly Linked List( Default : Linked List)`
 - ### `Doubly Linked List`
 - ### `Circular Linked List`
 - ### `Doubly Circular Linked List`
 
+---
 
-
------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Created And Coded By:
+
 <a href="https://github.com/hacker-404-error"><img src="https://i.ibb.co/yYd2Xjb/In-Shot-20220309-143908060.png" alt="Avatar" style="border-radius: 50%; width:70px"></a>
 
 <a href = "https://github.com/hacker-404-error">Pritam Das</a>
