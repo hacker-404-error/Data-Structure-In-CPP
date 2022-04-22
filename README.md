@@ -166,7 +166,7 @@ Step 06: Stop
 
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
-| O(n)            | O(1)             |
+| Theta(n)        | Theta(1)         |
 
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/A-Traversing.cpp)
 
@@ -275,7 +275,7 @@ Pair MaxMin(array, array_size)
 
 | TIME COMPLEXITY | SPACE COMPLEXITY |
 | --------------- | ---------------- |
-| Theta(n)        | Theta(1) or O(1) |
+| Theta(n)        | Theta(n)         |
 
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/E-Tournament_Method_Min_And_Max.cpp)
 
@@ -334,11 +334,61 @@ Combine two arrays in such a way that one array is appended to another array.
 
 Update operation refers to updating an existing element from the array at a given index.
 [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/O-Updating_In_Array.cpp)
-| | TIME COMPLEXITY | SPACE COMPLEXITY |
+|                  | TIME COMPLEXITY | SPACE COMPLEXITY |
 | ---------------- | --------------- | ---------------- |
-| Update operation | O(n) | O(1) |
+| Update operation | O(1)            | O(1)             |
 
 ---
+
+# 2D Array
+- 2D array can be defined as an array of arrays. 
+- The 2D array is organized as matrices which can be represented as the collection of rows and columns.
+```
+int arr[max_rows][max_columns];   
+```
+Implementation Of 2D-Array : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+<br>
+<div align="center">
+    <img src="https://i.ibb.co/VQ4xrPj/array-rep.png" alt="2D array representation">
+</div>
+<br>
+
+# Mapping 2D array to 1D array
+Mapping of 2D Array to 1D array is important because 2D arrays are the user's view but in memory or in computer's view they all are stored in 1D array either in Row Wise Order called `Row Major Order` OR  Column Wise Order called `Column Major Order`.
+
+### Row Major ordering
+- In row major ordering, all the rows of the 2D array are stored into the memory contiguously.
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/ds-2d-array-row-major-ordering2.png" alt="RMO">
+</div>
+<br>
+- First, the 1st row of the array is stored into the memory completely.
+- Then the 2nd row of the array is stored into the memory completely and so on till the last row.
+
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/ds-2d-array-row-major-ordering.png" alt="RMO">
+</div>
+<br>
+
+### Column Major ordering
+- According to the column major ordering, all the columns of the 2D array are stored into the memory contiguously.
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/ds-2d-array-column-major-ordering2.png" alt="RMO">
+</div>
+<br>
+- First, the 1st column of the array is stored into the memory completely
+- Then the 2nd row of the array is stored into the memory completely and so on till the last column of the array. 
+
+<br>
+<div align="center">
+    <img src="https://static.javatpoint.com/ds/images/ds-2d-array-column-major-ordering.png" alt="RMO">
+</div>
+<br>
+
+-------------------------------------
 
 # LINKED LIST
 
@@ -414,6 +464,7 @@ Update operation refers to updating an existing element from the array at a give
 | Deletion From Position  | O(n)            | O(1)             |
 
 ## Searching In Linked List :
+
 - #### `Searching :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
 
 ## Merging Of Linked List :
@@ -426,11 +477,12 @@ Update operation refers to updating an existing element from the array at a give
 - #### `Doubly Linked List`
 - #### `Circular Linked List`
 - #### `Doubly Circular Linked List`
-  
----------------------------------------------
+
+---
 
 # Doubly Linked List
-- Doubly linked list is a complex type of linked list in which a node contains a pointer to the previous as well as the next node in the sequence. 
+
+- Doubly linked list is a complex type of linked list in which a node contains a pointer to the previous as well as the next node in the sequence.
 - Therefore, in a doubly linked list, a node consists of three parts: node data, pointer to the next node in sequence (next pointer) , pointer to the previous node (previous pointer).
 <br>
 <div align="center">
