@@ -371,6 +371,23 @@ Mapping of 2D Array to 1D array is important because 2D arrays are the user's vi
     <img src="https://static.javatpoint.com/ds/images/ds-2d-array-row-major-ordering.png" alt="RMO">
 </div>
 <br>
+- If array is declared by a[LBi...UBi][LBj...UBj] 
+where,
+
+```
+LBi = Lower Bound of Row
+LBj = Lower Bound of column
+UBi = Upper Bound of row
+UBj = Upper Bound of column
+m = Number of rows (UBi - LBi + 1)
+n = Number of column (UBj - LBj + 1)
+```
+
+- Then address of an element a[i][j] of the array stored in row major order is calculated as,
+
+```
+Address(a[i][j]) = Base_Address + size * [ (i-LBi)*n + (j-LBj) ]   
+```
 
 ### Column Major ordering
 - According to the column major ordering, all the columns of the 2D array are stored into the memory contiguously.
@@ -387,6 +404,24 @@ Mapping of 2D Array to 1D array is important because 2D arrays are the user's vi
     <img src="https://static.javatpoint.com/ds/images/ds-2d-array-column-major-ordering.png" alt="RMO">
 </div>
 <br>
+
+- If array is declared by a[LBi...UBi][LBj...UBj] 
+where,
+
+```
+LBi = Lower Bound of Row
+LBj = Lower Bound of column
+UBi = Upper Bound of row
+UBj = Upper Bound of column
+m = Number of rows (UBi - LBi + 1)
+n = Number of column (UBj - LBj + 1)
+```
+
+- Then address of an element a[i][j] of the array stored in Column major order is calculated as,
+
+```
+Address(a[i][j]) = Base_Address + size * [ (j-LBj)*m + (i-LBi) ]   
+```
 
 -------------------------------------
 
