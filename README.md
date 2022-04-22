@@ -553,6 +553,11 @@ Address(a[i][j]) = Base_Address + size * [ (j-LBj)*m + (i-LBi) ]
 | Deletion From End       | O(n)            | O(1)             |
 | Deletion From Position  | O(n)            | O(1)             |
 
+## Searching In Linked List :
+
+- #### `Searching :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
+
+
 ## Merging Of Doubly Linked List :
 
 - #### `Merging :` [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)]()
