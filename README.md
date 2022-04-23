@@ -242,10 +242,10 @@ Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?styl
 ## `Finding Minimum And Maximum`
 
 ```
-   - No Of Comparision Between The Elements To find Minimum:              n-1
-   - No Of Comparision Between The Elements To find Maximum:              n-1
+   - No Of Comparision Between The Elements To find Minimum :              n-1
+   - No Of Comparision Between The Elements To find Maximum :              n-1
 
-   - Total Number Of Comparision To Find Min and Max :                    2n-2
+   - Total Number Of Comparision To Find Min and Max        :              2n-2
 ```
 
 2n-2 is The total number of comparision to find minimum and maximum : Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/D-MinAndMax_Element.cpp)
@@ -277,6 +277,14 @@ Pair MaxMin(array, array_size)
 | --------------- | ---------------- |
 | Theta(n)        | Theta(n)         |
 
+```
+   - No Of Comparision To make Two Lists of Max and Min :              n/2
+   - No Of Comparision in Max list To find Maximum      :              n/2-1
+   - No Of Comparision in Min list To find Minimum      :              n/2-1
+
+   - Total Number Of Comparision To Find Min and Max    :              3n/2-2
+```
+
 Complete Code : [![Open In CPP](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://github.com/hacker-404-error/Data-Structure-In-CPP/blob/master/A-ARRAY/E-Tournament_Method_Min_And_Max.cpp)
 
 ---
@@ -291,7 +299,7 @@ Insert operation is to insert one or more data elements into an array. Based on 
 
 |                        | TIME COMPLEXITY | SPACE COMPLEXITY |
 | ---------------------- | --------------- | ---------------- |
-| Insertion At Beginning | O(1)            | O(1)             |
+| Insertion At Beginning | O(n)            | O(1)             |
 | Insertion At End       | O(1)            | O(1)             |
 | Insertion At Position  | O(n)            | O(1)             |
 
@@ -305,7 +313,7 @@ Deletion refers to removing an existing element from the array and re-organizing
 
 |                         | TIME COMPLEXITY | SPACE COMPLEXITY |
 | ----------------------- | --------------- | ---------------- |
-| Deletion From Beginning | O(1)            | O(1)             |
+| Deletion From Beginning | O(n)            | O(1)             |
 | Deletion From End       | O(1)            | O(1)             |
 | Deletion From Position  | O(n)            | O(1)             |
 
